@@ -2,4 +2,4 @@
 
 - 程式碼撰寫教學
     - Python
-        - [創建並進行函數庫下載]()
+        - [創建並進行函數庫下載](./python/create-and-install.md)
