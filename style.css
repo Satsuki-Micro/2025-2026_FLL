@@ -1,0 +1,100 @@
+#info_col{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 400px !important;
+    width: 100%;
+    overflow: hidden;
+}
+
+.InfoCard {
+    width: 700px;
+    height: 300px;
+    background-color: #f4f1ea;
+    border: 3px solid #d4c5a9;
+    border-radius: 10px;
+    padding: 0 5px;
+    font-family: 'Microsoft JhengHei', sans-serif;
+    color: #3e3a36;
+    box-shadow: inset 0 0 30px rgba(139, 69, 19, 0.1);
+    margin: auto !important;
+}
+
+.InfoHead {
+    height: 18%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5d2e0d;
+    border-bottom: 2px solid #8b4513;
+    padding: 10px 5px;
+    line-height: 1.2;
+}
+
+.InfoBody {
+    height: 82%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.InfoImgDiv {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.InfoImg {
+    width: 70%;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.InfoTableDiv {
+    width: 70%;
+    max-height: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    user-select: none;
+}
+
+.InfoTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    user-select: none;
+}
+
+.InfoTableTd-Left {
+    padding: 5px 0;
+    color: #8b4513;
+    font-weight: bold;
+    width: 30%;
+    border-bottom: 1px dashed #d4c5a9;
+}
+
+.InfoTableTd-Right {
+    padding: 5px 0;
+    color: black;
+    border-bottom: 1px dashed #d4c5a9;
+}
+
+.InfoIntroduce {
+    line-height: 1.8;
+    font-size: 15px;
+    text-align: justify;
+    user-select: none;
+}
+
+.InfoIntroduceStrong {
+    color: #8b4513;
+}
+
+.InfoIntroduceH4 {
+    color: black;
+}
