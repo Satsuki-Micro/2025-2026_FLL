@@ -46,17 +46,17 @@ Project_Root/
 
 ## 📂 資料夾 (Directories)
 
-### [`data/`](./introduce/)
+### [`data/`](./introduce/data.md)
 
 * **用途**：**生成結果暫存區**。
 * **說明**：存放從 AI (N8N) 回傳並解壓縮後的檔案，預計包含生成的 `image.png` 與 `video.mp4`。
 
-### `Img/`
+### [`Img/`](./introduce/img.md)
 
 * **用途**：**器物原始圖片庫**。
 * **說明**：存放器物的靜態展示圖（如 `鼎.jpg`）。當系統辨識到物體時，會從此處讀取對應圖片並轉碼顯示於資訊卡上。
 
-### `model/`
+### [`model/`](./introduce/model.md)
 
 * **用途**：**AI 辨識模型存放區**。
 * **說明**：必須包含 TensorFlow 輸出的模型檔案：
