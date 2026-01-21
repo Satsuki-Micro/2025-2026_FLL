@@ -79,9 +79,9 @@ with gr.Blocks() as demo:
         # 下拉選單：從 DropDownList 載入選項
         people      = gr.Dropdown(label="人物", choices=DropDownList[0], interactive=True, filterable=False)
         dress       = gr.Dropdown(label="著裝", choices=DropDownList[1], interactive=True, filterable=False)
-        accessories = gr.Dropdown(label="配件", choices=DropDownList[2], interactive=True, filterable=False)
+        accessories = gr.Dropdown(label="配飾", choices=DropDownList[2], interactive=True, filterable=False)
         style       = gr.Dropdown(label="照片風格", choices=DropDownList[3], interactive=True, filterable=False)
-        context     = gr.Dropdown(label="情境", choices=DropDownList[4], interactive=True, filterable=False)
+        context     = gr.Dropdown(label="生活情境", choices=DropDownList[4], interactive=True, filterable=False)
         
         # 生成按鈕
         TriggerReduction = gr.Button("進 行 生 成")
@@ -124,4 +124,5 @@ if __name__ == "__main__":
     # 啟動 Gradio 應用
     # max_size=5: 限制佇列最大長度
     # css: 載入外部樣式表
+
     demo.queue(max_size=5).launch(css=tool.GetStyle(os.path.abspath('./style.css')), debug=True)
