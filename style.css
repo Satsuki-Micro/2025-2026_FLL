@@ -100,3 +100,21 @@
 .InfoIntroduceH4 {
     color: black; /* 請勿改動 */
 }
+
+/* 修正資訊卡 */
+
+/* 強制移除所有表格相關的預設邊框 */
+.InfoTable, 
+.InfoTable tr, 
+.InfoTable td {
+    border: 0 !important;
+    border-collapse: collapse !important; /* 建議改回 collapse 以確保下底線無縫接軌 */
+    outline: none !important;
+}
+
+/* 重新套用你需要的下底線 */
+.InfoTableTd-Left, 
+.InfoTableTd-Right {
+    border-bottom: 1px dashed #d4c5a9 !important; /* 加入 !important 確保覆蓋 */
+    padding: 8px 0; /* 稍微增加間距會更美觀 */
+}
