@@ -1,37 +1,39 @@
+/* 匿名開發者 Micro Satsuki */
+
 #info_col{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: 400px !important;
-    width: 100%;
-    overflow: hidden;
+    display: flex !important; /* 請勿改動 */
+    justify-content: center !important; /* 請勿改動 */
+    align-items: center !important; /* 請勿改動 */
+    height: 400px !important; /* 請勿改動 */
+    width: 100%; /* 請勿改動 */
+    overflow: hidden; /* 請勿改動 */
 }
 
 .InfoCard {
-    width: 700px;
-    height: 300px;
-    background-color: #f4f1ea;
-    border: 3px solid #d4c5a9;
-    border-radius: 10px;
-    padding: 0 5px;
-    font-family: 'Microsoft JhengHei', sans-serif;
-    color: #3e3a36;
-    box-shadow: inset 0 0 30px rgba(139, 69, 19, 0.1);
-    margin: auto !important;
+    width: 700px; /* 資訊卡寬度 */
+    height: 300px; /* 資訊卡高度 */
+    background-color: #f4f1ea; /* 請勿改動 */
+    border: 3px solid #d4c5a9; /* 請勿改動 */
+    border-radius: 10px; /* 資訊卡圓角 */
+    padding: 0 5px; /* 請勿改動 */
+    font-family: 'Microsoft JhengHei', sans-serif; /* 整張資訊卡字型(不是每個字型 Style 都可以拿來套用) */
+    color: #3e3a36; /* 請勿改動 */
+    box-shadow: inset 0 0 30px rgba(139, 69, 19, 0.1); /* 請勿改動 */
+    margin: auto !important; /* 資訊卡的外間距 */
 }
 
 .InfoHead {
-    height: 18%;
-    font-size: 24px;
-    font-weight: bold;
-    color: #5d2e0d;
-    border-bottom: 2px solid #8b4513;
-    padding: 10px 5px;
-    line-height: 1.2;
+    height: 18%; /* 陶器名稱欄位高度(若是更改，請必須將下方 .InfoBody 的高度參數更動，兩數相加須為 100% ) */
+    font-size: 24px; /* 陶器名稱文字大小 */
+    font-weight: bold; /* 請勿改動 */
+    color: #5d2e0d; /* 請勿改動 */
+    border-bottom: 2px solid #8b4513; /* 請勿改動 */
+    padding: 10px 5px; /* 請勿改動 */
+    line-height: 1.2; /* 請勿改動 */
 }
 
 .InfoBody {
-    height: 82%;
+    height: 82%; /* 下方照片及陶器資訊容器高度(若是更改，請務必將上方 .InfoHead 的高度參數更動，兩數相加須為 100% ) */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,62 +41,80 @@
 }
 
 .InfoImgDiv {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
+    width: 30%; /* 照片容器寬度(若是更改，請必須將下方 .InfoTableDiv 的高度參數更動，兩數相加須為 100% ) */
+    height: 100%; /* 請勿改動 */
+    display: flex; /* 請勿改動 */
+    justify-content: center; /* 請勿改動 */
+    align-items: center; /* 請勿改動 */
+    user-select: none; /* 請勿改動 */
 }
 
 .InfoImg {
-    width: 70%;
-    border-radius: 10px;
-    user-select: none;
+    width: 70%; /* 照片寬度，由於照片是 1：1 的，所以更改高度即可 */
+    border-radius: 10px; /* 圖片的圓角 */
+    user-select: none; /* 請勿改動 */
 }
 
 .InfoTableDiv {
-    width: 70%;
-    max-height: 100%;
-    overflow: auto;
-    scrollbar-width: none;
-    user-select: none;
+    width: 70%; /* 說明資訊容器寬度(若是更改，請必須將上方 .InfoImgDiv 的高度參數更動，兩數相加須為 100% ) */
+    max-height: 100%; /* 請勿改動 */
+    overflow: auto; /* 請勿改動 */
+    scrollbar-width: none; /* 請勿改動 */
+    user-select: none; /* 請勿改動 */
 }
 
 .InfoTable {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    margin-bottom: 15px;
-    font-size: 14px;
-    user-select: none;
+    width: 100%; /* 請勿改動 */
+    border-collapse: separate; /* 請勿改動 */
+    border-spacing: 0; /* 請勿改動 */
+    margin-bottom: 15px; /* 請勿改動 */
+    font-size: 14px; /* 請勿改動 */
+    user-select: none; /* 請勿改動 */
 }
 
 .InfoTableTd-Left {
-    padding: 5px 0;
-    color: #8b4513;
-    font-weight: bold;
-    width: 30%;
-    border-bottom: 1px dashed #d4c5a9;
+    padding: 5px 0; /* 請勿改動 */
+    color: #8b4513; /* 請勿改動 */
+    font-weight: bold; /* 請勿改動 */
+    width: 30%; /* 請勿改動 */
+    border-bottom: 1px dashed #d4c5a9; /* 請勿改動 */
 }
 
 .InfoTableTd-Right {
-    padding: 5px 0;
-    color: black;
-    border-bottom: 1px dashed #d4c5a9;
+    padding: 5px 0; /* 請勿改動 */
+    color: black; /* 請勿改動 */
+    border-bottom: 1px dashed #d4c5a9; /* 請勿改動 */
 }
 
 .InfoIntroduce {
-    line-height: 1.8;
-    font-size: 15px;
-    text-align: justify;
-    user-select: none;
+    line-height: 1.8; /* 請勿改動 */
+    font-size: 15px; /* 請勿改動 */
+    text-align: justify; /* 請勿改動 */
+    user-select: none; /* 請勿改動 */
 }
 
 .InfoIntroduceStrong {
-    color: #8b4513;
+    color: #8b4513; /* 請勿改動 */
 }
 
 .InfoIntroduceH4 {
-    color: black;
+    color: black; /* 請勿改動 */
+}
+
+/* 修正資訊卡 */
+
+/* 強制移除所有表格相關的預設邊框 */
+.InfoTable, 
+.InfoTable tr, 
+.InfoTable td {
+    border: 0 !important;
+    border-collapse: collapse !important; /* 建議改回 collapse 以確保下底線無縫接軌 */
+    outline: none !important;
+}
+
+/* 重新套用你需要的下底線 */
+.InfoTableTd-Left, 
+.InfoTableTd-Right {
+    border-bottom: 1px dashed #d4c5a9 !important; /* 加入 !important 確保覆蓋 */
+    padding: 8px 0; /* 稍微增加間距會更美觀 */
 }
